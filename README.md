@@ -7,7 +7,7 @@ An admin interface for [Laravel Backpack](laravelbackpack.com) to easily add, ed
 1. In your terminal:
 
 ``` bash
-$ composer require smartystudio/testimonialcrud -W
+$ composer require smartystudio/testimonialcrud
 ```
 
 2. If your Laravel version does not have package autodiscovery then add the service provider to your config/app.php file:

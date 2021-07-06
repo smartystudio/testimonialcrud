@@ -20,8 +20,8 @@ SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider::class,
 3. Publish the config file & run the migrations
 
 ```bash
-$ php artisan vendor:publish --provider="SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider" #publish config, view  and migration files
-$ php artisan migrate #create the testimonial table
+$ php artisan vendor:publish --provider="SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider" # publish config, view  and migration files
+$ php artisan migrate # create the testimonial table
 ```
 
 4. [Optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:

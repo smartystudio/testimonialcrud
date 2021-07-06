@@ -1,6 +1,6 @@
 <?php
 
-namespace SmartyStudio\GalleryCrud\app\Models;
+namespace SmartyStudio\TestimonialCrud\app\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;

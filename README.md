@@ -36,7 +36,7 @@ $ php artisan migrate # create the testimonial table
 use SmartyStudio\TestimonialCrud\app\Http\View\Composers\TestimonialComposer;
 ```
 
-6. Add the line below before the last curly brackets of boot() method:
+6. Add the line below before the last curly brackets of boot() method in App\Providers\ViewServiceProvider.php file:
 
 ```php
 view()->composer('folder_name.*', TestimonialComposer::class);
@@ -44,6 +44,10 @@ view()->composer('folder_name.*', TestimonialComposer::class);
 ## How to use the package
 
 * First create a testimonial
+* Add title
+* Add content
+* Add client
+* Add client url (optional)
 * Upload an image
 * Save the testimonial
 

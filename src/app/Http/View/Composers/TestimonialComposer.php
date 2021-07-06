@@ -1,6 +1,6 @@
 <?php
 
-namespace SmartyStudio\TestimonialCrud\app\HttpView\Composers;
+namespace SmartyStudio\TestimonialCrud\app\Http\View\Composers;
 
 use Illuminate\View\View;
 use SmartyStudio\TestimonialCrud\app\Models\Testimonial;

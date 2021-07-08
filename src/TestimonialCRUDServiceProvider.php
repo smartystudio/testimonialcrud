@@ -32,17 +32,6 @@ class TestimonialCRUDServiceProvider extends ServiceProvider
 
         // publish migrations
         $this->publishes([__DIR__ . '/database/migrations' => database_path('migrations')], 'migrations');
-
-        // load views
-        // - first the published views (in case they have any changes)
-        $this->loadViewsFrom(resource_path('views/vendor/smartystudio/testimonialcrud'), 'smartystudio');
-        // - then the stock views that come with the package, in case a published view might be missing
-        $this->loadViewsFrom(realpath(__DIR__ . '/resources/views'), 'smartystudio');
-
-        // publish views
-        $this->publishes([
-            __DIR__ . '/resources/views/testimonialcrud' => resource_path('views/vendor/smartystudio/testimonialcrud'),
-		], 'views');
     }
 
     /**

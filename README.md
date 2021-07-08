@@ -17,10 +17,10 @@ Cviebrock\EloquentSluggable\ServiceProvider::class,
 SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider::class,
 ```
 
-3. Publish the config file & run the migrations
+3. Publish & run the migration file
 
 ```bash
-$ php artisan vendor:publish --provider="SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider" # publish config, view  and migration files
+$ php artisan vendor:publish --provider="SmartyStudio\TestimonialCrud\TestimonialCRUDServiceProvider" # publish migration file
 $ php artisan migrate # create the testimonial table
 ```
 

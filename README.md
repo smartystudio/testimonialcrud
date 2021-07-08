@@ -30,17 +30,20 @@ $ php artisan migrate # create the testimonial table
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('testimonial') }}"><i class="nav-icon la la-bullhorn"></i><span>Testimonials</span></a></li>
 ```
 
-5. Add a **TestimonialComposer** in App\Providers\ViewServiceProvider.php:
+5. Add a **TestimonialComposer** in App\Providers\AppServiceProvider.php:
 
 ```php
 use SmartyStudio\TestimonialCrud\app\Http\View\Composers\TestimonialComposer;
 ```
 
-6. Add the line below before the last curly brackets of boot() method in App\Providers\ViewServiceProvider.php file:
+6. Add the line below after the first curly brackets of boot() method in App\Providers\AppServiceProvider.php file:
 
 ```php
 view()->composer('folder_name.*', TestimonialComposer::class);
 ```
+
+**folder_name** - this is the folder with the front-end template files where the testimonials should appear
+
 ## How to use the package
 
 * First create a testimonial

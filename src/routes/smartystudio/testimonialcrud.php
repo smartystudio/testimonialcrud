@@ -1,15 +1,6 @@
 <?php
 
 /**
- * Front-end routes
- */
-Route::group(['prefix' => 'testimonial'], function () {
-    Route::get('/', ['uses' => '\SmartyStudio\TestimonialCrud\App\Http\Controllers\TestimonialController@index']);
-    Route::get('/{testimonial}/{subs?}', ['as' => 'view-testimonial', 'uses' => '\SmartyStudio\TestimonialCrud\App\Http\Controllers\TestimonialController@show'])
-        ->where(['testimonial' => '^((?!admin).)*$', 'subs' => '.*']);
-});
-
-/**
  * Admin routes
  */
 Route::group([
